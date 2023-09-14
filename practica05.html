@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>practica04</title>
+    <title>practica05</title>
     <style>
         img{
             box-shadow: 5px 10px 20px red;
+            border-radius: 10% 50% 30%;
         }
         figure{
             text-align: center;
             width: 350px;
             display:inline-block;
+        }
+        img.redonda{
+            border-radius: 50%;
         }
         
     </style>
@@ -19,13 +23,6 @@
 <body>
     <h1>Random Picture</h1>
     <div id="app"></div>
-    <!-- <figure><img src="https://picsum.photos/id/1/200/200" alt="">
-        <figcaption>John</figcaption> 
-    </figure>
-    
-    <figure><img src="https://picsum.photos/id/2/200/200" alt="">
-        <figcaption>Jean</figcaption>
-    </figure> -->
     
     <script>
         const app = document.getElementById("app")
@@ -40,10 +37,18 @@
                  <figcaption>${parametros.nombre}</figcaption>
                  </figure>
                  `
-        
         }
-        app.innerHTML = Picture({id:"18",nombre:"John"})
-        app.innerHTML += Picture({id:"1000",nombre:"Jane"})
+        app.innerHTML = Picture({id:"111",nombre:"John"})
+        app.innerHTML += Picture({id:"222",nombre:"Jane"})
+        app.innerHTML += Picture({id:"334",nombre:"Joan"})
+
+        const lista = document.querySelectorAll("img") 
+        for (let i = 0; i < lista.length; i++) {
+            lista[i].addEventListener("click", ()=> { 
+                lista[i].classList.toggle("redonda")
+            })
+        }
+
     </script>
 </body>
 </html>
