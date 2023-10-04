@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+form{
+    box-shadow: 10px 20px 25px;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid lightgray;
+    padding: 15px;
+    border-radius: 7px;
+}
+label{
+    display: block;
+    margin-bottom: 3px;
+}
+input{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+}
+input[type="submit"]{
+    display: block; 
+    background-color: blue;
+    color: white;
+}        
+h1{
+    text-align: center;
+}
